@@ -34,10 +34,10 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Anyscale"
 
-  assistants:
-    supportedIds: ["gpt-4-assistant"]
-    disableBuilder: false
-    capabilities: ["code_interpreter", "retrieval", "tools"]
+assistants:
+      supportedIds: ["asst_gkoXssbm9LnOWFr7qj3sArJt"]
+      disableBuilder: false
+      capabilities: ["code_interpreter", "retrieval", "tools"]
 
 
     # APIpie
