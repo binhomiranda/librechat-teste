@@ -96,10 +96,10 @@ endpoints:
       disableBuilder: false # Disable Assistants Builder Interface by setting to `true`
       pollIntervalMs: 3000  # Polling interval for checking assistant updates
       timeoutMs: 180000  # Timeout for assistant operations
-  #   # Should only be one or the other, either `supportedIds` or `excludedIds`
-  supportedIds:
-   - "asst_gkoXssbm9LnOWFr7qj3sArJt"
-      privateAssistants: false # Does not work with `supportedIds` or `excludedIds`
+      supportedIds:
+         [
+          'asst_gkoXssbm9LnOWFr7qj3sArJt']
+      privateAssistants: false 
       capabilities: ["code_interpreter", "retrieval", "actions", "tools", "image_vision"]
   custom:
     # Groq Example
