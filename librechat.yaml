@@ -39,7 +39,7 @@ endpoints:
     - id: "assisentesss"
       name: "GPT-4 Assistant"
       type: "openai"
-      model: "gpt-4"
+      model: ["gpt-4"]
 
     # APIpie
     # https://apipie.ai/dashboard/
