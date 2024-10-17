@@ -33,7 +33,12 @@ endpoints:
       summaryModel: "meta-llama/Llama-2-7b-chat-hf"
       forcePrompt: false
       modelDisplayLabel: "Anyscale"
-  
+
+  assistants:
+    supportedIds: ["gpt-4-assistant"]
+    disableBuilder: false
+    capabilities: ["code_interpreter", "retrieval", "tools"]
+
 
     # APIpie
     # https://apipie.ai/dashboard/
