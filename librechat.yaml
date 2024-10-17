@@ -34,11 +34,17 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Anyscale"
 
-assistants:
-      supportedIds: ["asst_gkoXssbm9LnOWFr7qj3sArJt"]
+  assistants:
       disableBuilder: false
-      capabilities: ["code_interpreter", "retrieval", "tools"]
-
+    # Use either `supportedIds` or `excludedIds` but not both
+      supportedIds: ["asst_gkoXssbm9LnOWFr7qj3sArJt"]
+    # excludedIds: ["asst_excludedAssistantId"]
+    # `privateAssistants` do not work with `supportedIds` or `excludedIds`
+    # privateAssistants: false
+    # (optional) Models that support retrieval, will default to latest known OpenAI models that support the feature
+    # retrievalModels: ["gpt-4-turbo-preview"]
+    # (optional) Assistant Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
+    # capabilities: ["code_interpreter", "retrieval", "actions", "tools", "image_vision"]
 
     # APIpie
     # https://apipie.ai/dashboard/
