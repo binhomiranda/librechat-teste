@@ -1,0 +1,42 @@
+# For more information, see the Configuration Guide:
+# https://docs.librechat.ai/install/configuration/custom_config.html
+
+version: 1.0.9
+
+# Cache settings: Set to true to enable caching
+cache: true
+
+# Custom interface configuration
+interface:
+  privacyPolicy:
+    externalUrl: 'https://librechat.ai/privacy-policy'
+    openNewTab: true
+  termsOfService:
+    externalUrl: 'https://librechat.ai/tos'
+    openNewTab: true
+
+# Example Registration Object Structure (optional)
+registration:
+  socialLogins: ['github', 'google', 'discord', 'openid', 'facebook']
+
+# Definition of custom endpoints
+endpoints:
+  assistants:
+    disableBuilder: false
+    pollIntervalMs: 750
+    timeoutMs: 180000
+    supportedIds: ["asst_gkoXssbm9LnOWFr7qj3sArJt"]
+    retrievalModels: ["gpt-4-turbo-preview"]
+    capabilities: ["code_interpreter", "retrieval", "actions", "tools", "image_vision"]
+
+# OpenAI endpoint configuration
+custom:
+  - name: 'OpenAI'
+    apiKey: '${OPENAI_API_KEY}'
+    baseURL: 'https://api.openai.com/v1/'
+    models:
+      default: ["gpt-4", "gpt-3.5-turbo"]
+    fetch: false
+    titleConvo: true
+    titleModel: 'gpt-4'
+    modelDisplayLabel: 'OpenAI'
