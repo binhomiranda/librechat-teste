@@ -34,13 +34,6 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Anyscale"
 
-    # Configurações de Assistentes
-    assistants:
-    - id: "assisentesss"
-      name: "GPT-4 Assistant"
-      type: "openai"
-      model: ["gpt-4"]
-
     # APIpie
     # https://apipie.ai/dashboard/
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/apipie.py
