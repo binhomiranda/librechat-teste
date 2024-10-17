@@ -35,6 +35,11 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Anyscale"
 
+endpoints:
+  # azureAssistants: # <-- Azure-specific configuration has the same structure as `assistants`
+    #  pollIntervalMs: 500
+    #  timeoutMs: 10000
+ 
   assistants:
     disableBuilder: false
     # Use either `supportedIds` or `excludedIds` but not both
