@@ -39,4 +39,4 @@ openai:
   fetch: false
   titleConvo: true
   titleModel: 'gpt-4'
-  modelDisplayLabel: 'OpenAI'
+  modelDisplayLabel: 'OpenAIX'
