@@ -35,11 +35,6 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Anyscale"
 
-  assistants:
-    disableBuilder: false
-    # Use either `supportedIds` or `excludedIds` but not both
-    supportedIds: ["asst_gkoXssbm9LnOWFr7qj3sArJt"]
-    
     # APIpie
     # https://apipie.ai/dashboard/
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/apipie.py
